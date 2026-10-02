@@ -1,0 +1,344 @@
+:root{--ink:#082d54;--ink2:#0d3f72;--muted:#607992;--line:#dce5ec;--soft:#f3f7f9;--accent:#0d447b;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth;overflow-x:hidden}body{margin:0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased;overflow-x:hidden}a{text-decoration:none;color:inherit}button,input{font:inherit}main{width:100%;overflow:hidden}.nav{height:92px;padding:0 clamp(28px,6vw,110px);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e2e9ef;background:rgba(255,255,255,.97);position:sticky;top:0;z-index:30;backdrop-filter:blur(14px)}.logo{font-size:24px;font-weight:800;letter-spacing:.1em;white-space:nowrap}.logo span{font-weight:300;color:#71869b}.nav nav{display:flex;gap:48px;font-size:15px;color:#355575}.nav nav a{transition:.2s}.nav nav a:hover{color:var(--accent)}.topBtn,.primary{display:inline-flex;align-items:center;justify-content:center;gap:22px;background:var(--accent);color:#fff;border-radius:999px;padding:17px 25px;font-size:14px;font-weight:700;transition:.2s}.topBtn:hover,.primary:hover{transform:translateY(-2px);background:#092f58}.topBtn b,.primary b{font-size:19px;font-weight:400}
+.hero{min-height:760px;position:relative;overflow:hidden;background:#f4f7f8}.heroImage{position:absolute;z-index:0;inset:0 0 0 40%;overflow:hidden}.heroImage img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}.heroShade{position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,#fff 0%,#fff 28%,rgba(255,255,255,.98) 39%,rgba(255,255,255,.74) 52%,rgba(255,255,255,.15) 70%,rgba(255,255,255,0) 100%)}.heroOverlay{position:relative;z-index:3;width:min(760px,55%);padding:145px 0 0 clamp(28px,6vw,110px)}.eyebrow{font-size:12px;letter-spacing:.24em;font-weight:800;color:#24537e}.hero h1{font-size:clamp(58px,5.7vw,88px);line-height:.94;letter-spacing:-.065em;margin:30px 0 28px;color:#092f57}.hero h1 span,h2 span{color:#708aa4}.heroOverlay p{max-width:560px;color:#5c7690;line-height:1.72;font-size:18px;margin:0}.heroActions{display:flex;align-items:center;gap:34px;margin-top:42px}.video{display:flex;align-items:center;gap:15px;font-size:14px;color:#173d62}.video i{width:52px;height:52px;border:1px solid #9db0c2;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:15px;transition:.2s}.video:hover i{background:#fff;transform:translateX(3px)}.video small{display:block;color:#8092a4;margin-top:5px;font-size:11px}.heroMeta{position:absolute;z-index:3;left:clamp(28px,6vw,110px);bottom:32px;display:flex;gap:18px;align-items:center;color:#71869a;font-size:10px;letter-spacing:.17em}.heroMeta span:first-child{color:#123e6e;font-weight:800}.guarantee{position:absolute;z-index:4;right:clamp(28px,5vw,90px);top:42px;background:#fff;border-radius:14px;padding:21px 25px;display:flex;gap:15px;align-items:center;box-shadow:0 18px 50px rgba(15,48,78,.15)}.guarantee span{font-size:31px;color:var(--accent)}.guarantee b{font-size:13px;line-height:1.35;display:block}.guarantee small{display:block;color:#71869a;margin-top:5px;font-size:11px}
+.benefits{padding:0 clamp(28px,6vw,110px);display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--line);background:#fff}.benefit{display:flex;gap:20px;padding:34px 28px 35px 0;border-right:1px solid var(--line);min-height:112px}.benefit:not(:first-child){padding-left:28px}.benefit:last-child{border-right:0}.benefitNum{font-size:10px;color:#8296a9;letter-spacing:.12em}.benefit strong{display:block;font-size:15px;line-height:1.3}.benefit small{display:block;color:#7a8ea2;font-size:12px;line-height:1.45;margin-top:7px;max-width:230px}
+.section{padding:145px clamp(28px,6vw,110px)}.doctors{background:#fff}.sectionTop{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:68px}.doctorIntro h2,.clinic h2,.services h2,.reviews h2,.contact h2{font-size:clamp(52px,4.6vw,74px);line-height:.96;letter-spacing:-.06em;margin:24px 0}.doctorIntro p,.clinic p,.contact>p,.servicesHeader>p{color:#647b93;line-height:1.75;font-size:16px;max-width:570px;margin:0}.outline{display:inline-flex;align-items:center;gap:28px;border:1px solid #9db0c2;border-radius:999px;padding:16px 21px;font-size:13px;margin-top:32px;transition:.2s}.outline:hover{border-color:var(--accent);transform:translateY(-2px)}.sectionSideNote{display:flex;gap:15px;align-items:flex-start;color:#8093a5;font-size:11px;line-height:1.5;text-transform:uppercase;letter-spacing:.12em}.sectionSideNote span{color:var(--accent);font-weight:800}.doctorGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px}.doctorCard{min-width:0}.doctorPhoto{height:450px;background:#e7edf2;position:relative;overflow:hidden}.doctorPhoto img{display:block;width:100%;height:100%;object-fit:cover;object-position:center top;transition:transform .5s}.doctorCard:hover .doctorPhoto img{transform:scale(1.025)}.doctorPhoto>span{position:absolute;left:20px;top:18px;color:#fff;font-size:11px;letter-spacing:.1em;text-shadow:0 1px 8px #0005}.doctorPhoto button{position:absolute;right:17px;bottom:17px;width:48px;height:48px;border:0;border-radius:50%;background:#fff;color:var(--accent);cursor:pointer;box-shadow:0 8px 20px #123b5c22;font-size:16px}.doctorInfo{display:flex;justify-content:space-between;align-items:flex-start;padding-top:20px;border-bottom:1px solid var(--line);padding-bottom:24px}.doctorGrid h3{font-size:20px;margin:0 0 8px;color:#0b3159}.doctorGrid p{font-size:13px;color:#71869b;margin:0}.doctorArrow{font-size:21px;color:#6d89a4}
+.clinic{padding:145px clamp(28px,6vw,110px);background:var(--soft);display:grid;grid-template-columns:.9fr 1.1fr;gap:100px;align-items:center}.clinicVisual{position:relative}.clinicVisual img{display:block;width:100%;height:560px;object-fit:cover;object-position:center}.imageCaption{position:absolute;left:0;bottom:0;background:#fff;padding:20px 23px;display:flex;gap:24px;align-items:flex-start;min-width:285px}.imageCaption span{font-size:10px;color:#6e879f}.imageCaption p{font-size:12px;line-height:1.5;color:#123b60;margin:0}.stats{display:flex;gap:65px;margin-top:55px;padding-top:31px;border-top:1px solid #d6e0e7}.stats b{font-size:31px;color:#0b3159}.stats small{display:block;font-size:10px;color:#75899c;font-weight:400;margin-top:7px;white-space:nowrap}.textLink{display:inline-flex;gap:17px;margin-top:38px;font-size:13px;font-weight:700;color:#0b3d70}.textLink span{font-size:18px;font-weight:400}
+.servicesHeader{display:flex;justify-content:space-between;align-items:flex-end;gap:80px}.servicesHeader>p{max-width:450px;margin-bottom:9px}.serviceGrid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);margin-top:70px}.serviceCard{padding:44px 48px 46px 0;border-bottom:1px solid var(--line);min-height:285px;transition:.25s}.serviceCard:nth-child(even){padding-left:48px;border-left:1px solid var(--line)}.serviceCard:hover{background:#f7f9fa}.serviceTop{display:flex;justify-content:space-between;color:#7890a5;font-size:11px}.serviceTop span{font-size:21px;color:var(--accent)}.serviceCard h3{font-size:32px;letter-spacing:-.035em;margin:55px 0 13px;color:#0b3159}.serviceCard p{color:#71859a;line-height:1.65;font-size:14px;max-width:500px;margin:0}.serviceCard a{display:inline-flex;gap:11px;margin-top:28px;font-size:11px;font-weight:800;color:#0b3d70;text-transform:uppercase;letter-spacing:.08em}
+.reviews{background:#0b3159;color:#fff;padding:135px clamp(28px,6vw,110px)}.reviews .eyebrow{color:#a9bfd4}.reviews h2{color:#fff}.reviewsHeader{display:flex;justify-content:space-between;align-items:flex-end}.reviewScore{display:flex;align-items:flex-end;gap:13px;padding-bottom:10px}.reviewScore b{font-size:58px;line-height:.8}.reviewScore span{font-size:10px;color:#a9bfd4;text-transform:uppercase;letter-spacing:.1em}.reviewScore i{font-style:normal;letter-spacing:2px;font-size:12px;color:#dce9f3}.reviewGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:68px}.reviewGrid article{border:1px solid rgba(255,255,255,.18);padding:34px;min-height:305px;display:flex;flex-direction:column;transition:.2s}.reviewGrid article:hover{background:rgba(255,255,255,.04)}.stars{letter-spacing:4px;font-size:11px}.reviewGrid p{line-height:1.7;color:#e4ebf1;font-size:15px;flex:1;margin:34px 0}.reviewGrid b{font-size:12px}.reviewGrid small{display:block;color:#91abc1;font-size:10px;margin-top:6px}
+.contact{padding:135px clamp(28px,6vw,110px);text-align:center;background:var(--soft)}.contactInner{max-width:1050px;margin:auto}.contact>p{margin:0 auto 44px}.contact form{max-width:900px;margin:auto;display:grid;grid-template-columns:1fr 1fr auto;gap:10px}.contact input,.contact button{height:62px;padding:0 20px;border:1px solid #cbd8e2;background:#fff;outline:none;font-size:14px}.contact input:focus{border-color:var(--accent)}.contact button{background:var(--accent);color:#fff;border-color:var(--accent);cursor:pointer;font-weight:700;min-width:200px}.privacy{display:block;color:#91a1af;font-size:10px;margin-top:15px}footer{padding:58px clamp(28px,6vw,110px);display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:50px;border-top:1px solid #e2e9ee;background:#fff}footer p{font-size:12px;color:#71859a;line-height:1.6;margin:16px 0 0}.footerLinks{display:flex;gap:30px;align-items:flex-start;flex-wrap:wrap;font-size:13px;color:#45627f}.footerMeta{display:flex;flex-direction:column;gap:9px;align-items:flex-end;color:#72869b;font-size:10px;text-align:right}.footerMeta small{font-size:10px}
+@media(max-width:1100px){.nav{padding:0 5vw}.heroOverlay{width:64%;padding-left:5vw}.benefits{padding:0 5vw}.section,.clinic,.reviews,.contact{padding-left:5vw;padding-right:5vw}.doctorPhoto{height:390px}.clinic{gap:60px}footer{padding-left:5vw;padding-right:5vw}}
+@media(max-width:850px){.nav{height:76px}.nav nav{display:none}.topBtn{padding:13px 18px;font-size:12px}.hero{min-height:720px}.heroImage{inset:0 0 auto 0;height:58%;opacity:.96}.heroShade{background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.72) 47%,#fff 76%)}.heroOverlay{width:100%;padding:320px 5vw 0}.hero h1{font-size:51px}.heroOverlay p{font-size:15px}.guarantee{right:5vw;top:25px}.benefits{grid-template-columns:1fr 1fr}.benefit{padding:23px 15px 23px 0}.benefit:not(:first-child){padding-left:15px}.section{padding-top:100px;padding-bottom:100px}.sectionTop,.servicesHeader,.reviewsHeader{display:block}.sectionSideNote,.servicesHeader>p{margin-top:28px}.doctorGrid,.reviewGrid{grid-template-columns:1fr}.doctorPhoto{height:460px}.clinic{grid-template-columns:1fr;padding-top:100px;padding-bottom:100px}.clinicVisual img{height:430px}.stats{gap:35px}.serviceGrid{grid-template-columns:1fr}.serviceCard,.serviceCard:nth-child(even){padding:34px 0;border-left:0}.reviews{padding-top:100px;padding-bottom:100px}.reviewScore{margin-top:30px}.contact{padding-top:100px;padding-bottom:100px}.contact form{grid-template-columns:1fr}.contact button{width:100%}footer{grid-template-columns:1fr;gap:30px}.footerMeta{align-items:flex-start;text-align:left}}
+@media(max-width:520px){.logo{font-size:18px}.topBtn{font-size:10px}.hero{min-height:690px}.heroOverlay{padding-top:285px}.hero h1{font-size:42px}.heroOverlay p{font-size:14px}.heroActions{gap:18px;flex-wrap:wrap}.primary{padding:14px 17px}.guarantee{padding:13px 15px}.guarantee b{font-size:10px}.benefits{grid-template-columns:1fr}.benefit{border-right:0;border-bottom:1px solid #e1e8ee!important;padding:18px 0!important}.benefit:last-child{border-bottom:0!important}.doctorIntro h2,.clinic h2,.services h2,.reviews h2,.contact h2{font-size:42px}.doctorPhoto{height:360px}.clinicVisual img{height:320px}.stats{gap:20px}.stats b{font-size:22px}.stats small{font-size:8px}.imageCaption{min-width:220px}.serviceCard h3{font-size:25px}.reviewGrid article{min-height:250px}}
+
+/* =========================
+   V9 PREMIUM POLISH
+   ========================= */
+:root{
+  --ink:#082b50;
+  --ink2:#103e6b;
+  --muted:#6a7f93;
+  --line:#d8e2ea;
+  --soft:#f4f7f9;
+  --accent:#0b3d70;
+  --accent2:#173f68;
+}
+body{font-size:16px}
+.mobileMenu{display:none}
+.sectionRule{
+  display:flex;align-items:center;gap:14px;
+  width:100%;margin-bottom:48px;
+  color:#8194a6;font-size:10px;letter-spacing:.18em;text-transform:uppercase;
+}
+.sectionRule span{color:var(--accent);font-weight:800}
+.sectionRule i{height:1px;background:var(--line);flex:1;display:block}
+.sectionRule small{font-size:9px;letter-spacing:.2em}
+.sectionRule.light{color:#9bb1c7}
+.sectionRule.light i{background:rgba(255,255,255,.18)}
+.sectionRule.light span{color:#fff}
+
+.nav{height:88px}
+.logo{font-size:25px}
+.nav nav{font-size:16px;gap:44px}
+.topBtn{font-size:14px;padding:17px 27px}
+
+.hero{min-height:735px}
+.heroOverlay{padding-top:138px}
+.hero h1{font-size:clamp(62px,6vw,92px);line-height:.91;margin-top:27px;margin-bottom:30px}
+.heroOverlay p{font-size:19px;max-width:590px}
+.heroActions{margin-top:40px}
+.primary{font-size:14px;padding:18px 26px}
+.heroMeta{bottom:27px;font-size:10px}
+.guarantee{top:34px;padding:20px 24px}
+
+.benefits{min-height:126px}
+.benefit{padding-top:38px;padding-bottom:38px}
+.benefit strong{font-size:16px}
+.benefit small{font-size:13px}
+
+.section{padding-top:120px;padding-bottom:128px}
+.doctorIntro h2,.clinic h2,.services h2,.reviews h2,.contact h2{
+  font-size:clamp(54px,5vw,78px);
+  line-height:.93;
+}
+.doctorIntro p,.clinic p,.servicesHeader>p,.contact>p{font-size:17px}
+.sectionTop{margin-bottom:58px}
+.doctorGrid{gap:26px}
+.doctorPhoto{height:470px}
+.doctorGrid h3{font-size:21px}
+.doctorGrid p{font-size:14px}
+
+.clinic{
+  position:relative;
+  padding-top:128px;padding-bottom:128px;
+  gap:86px;
+}
+.clinicCopy{max-width:610px}
+.clinicVisual img{height:570px}
+.stats{gap:58px;margin-top:48px}
+.stats b{font-size:34px}
+
+.servicesHeader{gap:110px}
+.serviceGrid{margin-top:62px}
+.serviceCard{min-height:310px;padding-top:48px;padding-bottom:50px}
+.serviceCard h3{font-size:35px;margin-top:58px}
+.serviceCard p{font-size:15px}
+
+.reviews{padding-top:120px;padding-bottom:128px}
+.reviewGrid{gap:18px;margin-top:60px}
+.reviewGrid article{min-height:320px;padding:36px}
+.reviewGrid p{font-size:16px;line-height:1.72}
+
+.contact{padding-top:120px;padding-bottom:120px}
+.contactInner{max-width:980px}
+.contact form{max-width:920px}
+.contact input,.contact button{height:66px;font-size:15px}
+
+footer{padding-top:62px;padding-bottom:62px}
+footer p{font-size:13px}
+
+@media(max-width:850px){
+  .mobileMenu{
+    display:inline-flex;width:40px;height:40px;align-items:center;justify-content:center;
+    border:1px solid var(--line);border-radius:50%;font-size:15px;margin-left:8px;
+  }
+  .topBtn{padding:12px 17px}
+  .hero{min-height:700px}
+  .heroOverlay{padding-top:315px}
+  .hero h1{font-size:54px}
+  .heroOverlay p{font-size:16px}
+  .sectionRule{margin-bottom:34px}
+  .section{padding-top:88px;padding-bottom:92px}
+  .doctorPhoto{height:430px}
+  .clinic{padding-top:88px;padding-bottom:92px;gap:45px}
+  .clinicVisual img{height:450px}
+  .serviceCard{min-height:275px}
+  .reviews{padding-top:90px;padding-bottom:92px}
+  .contact{padding-top:88px;padding-bottom:92px}
+}
+@media(max-width:520px){
+  .nav{height:72px;padding:0 18px}
+  .logo{font-size:18px}
+  .topBtn{font-size:10px;padding:11px 13px}
+  .mobileMenu{width:36px;height:36px}
+  .hero{min-height:675px}
+  .heroOverlay{padding:275px 18px 0}
+  .hero h1{font-size:43px}
+  .heroOverlay p{font-size:14px;line-height:1.6}
+  .guarantee{right:18px;top:18px}
+  .section{padding-left:18px;padding-right:18px}
+  .sectionRule{gap:9px}
+  .doctorIntro h2,.clinic h2,.services h2,.reviews h2,.contact h2{font-size:43px}
+  .doctorPhoto{height:365px}
+  .clinic{padding-left:18px;padding-right:18px}
+  .clinicVisual img{height:325px}
+  .serviceCard h3{font-size:27px}
+  .reviewGrid article{min-height:275px;padding:28px}
+  .contact form{gap:8px}
+}
+
+/* =========================
+   V10 FINAL STRUCTURE + PREMIUM POLISH
+   ========================= */
+html{scroll-padding-top:108px}
+section[id]{scroll-margin-top:108px}
+
+/* Fix: the clinic section marker must not consume a grid column. */
+.clinic>.sectionRule{
+  grid-column:1 / -1;
+  width:100%;
+  margin:0;
+}
+.clinic{
+  grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);
+  column-gap:clamp(56px,7vw,108px);
+  row-gap:46px;
+  align-items:center;
+}
+.clinicCopy{align-self:center}
+.clinicVisual{align-self:center}
+.clinicVisual img{
+  height:clamp(500px,39vw,575px);
+  object-position:center 38%;
+}
+
+/* Cleaner vertical rhythm between content groups. */
+.doctors .sectionRule{margin-bottom:0}
+.doctors .sectionTop{margin-top:54px}
+.services .sectionRule{margin-bottom:0}
+.services .servicesHeader{margin-top:54px}
+.reviews .sectionRule{margin-bottom:0}
+.reviews .reviewsHeader{margin-top:54px}
+.contact .sectionRule{margin-bottom:0}
+.contact .contactInner{margin-top:54px}
+
+/* Premium interaction details. */
+.topBtn,.primary,.outline,.contact button,.doctorPhoto button,.serviceCard,.reviewGrid article,.textLink{will-change:transform}
+.topBtn:focus-visible,.primary:focus-visible,.outline:focus-visible,a:focus-visible,button:focus-visible,input:focus-visible{
+  outline:2px solid #6e9ac0;
+  outline-offset:4px;
+}
+.doctorCard,.serviceCard,.reviewGrid article{transition:transform .25s ease,background-color .25s ease,box-shadow .25s ease}
+.doctorCard:hover{transform:translateY(-4px)}
+.serviceCard:hover{transform:translateY(-3px);box-shadow:0 16px 36px rgba(15,55,90,.07)}
+.reviewGrid article:hover{transform:translateY(-3px);box-shadow:0 16px 36px rgba(0,0,0,.10)}
+
+/* Slightly calmer body copy for a luxury/editorial feel. */
+.heroOverlay p,.doctorIntro p,.clinic p,.servicesHeader>p,.contact>p{letter-spacing:-.01em}
+
+@media(max-width:850px){
+  html{scroll-padding-top:82px}
+  section[id]{scroll-margin-top:82px}
+  .clinic>.sectionRule{grid-column:auto}
+  .clinic{row-gap:38px}
+  .doctors .sectionTop,.services .servicesHeader,.reviews .reviewsHeader,.contact .contactInner{margin-top:38px}
+  .clinicVisual img{height:430px;object-position:center 35%}
+}
+@media(max-width:520px){
+  html{scroll-padding-top:76px}
+  section[id]{scroll-margin-top:76px}
+  .clinicVisual img{height:320px}
+  .doctors .sectionTop,.services .servicesHeader,.reviews .reviewsHeader,.contact .contactInner{margin-top:30px}
+}
+
+
+/* =========================
+   FINAL CLIENT-READY POLISH
+   ========================= */
+.benefit{gap:0}
+.benefitNum{display:none}
+.benefit strong{font-size:15px;letter-spacing:-.01em}
+.benefit small{font-size:12px;line-height:1.5;margin-top:8px}
+
+/* Remove editorial markers/numbers from the visual hierarchy. */
+.sectionRule small{font-size:10px}
+.sectionRule i{opacity:.75}
+.heroMeta{display:none}
+.imageCaption{padding:22px 26px;box-shadow:0 14px 30px rgba(11,45,80,.08)}
+
+/* Contact form: success state is hidden until submit. */
+.formSuccess{display:none;color:#0b3d70;font-size:15px;margin-top:14px;font-weight:600}
+.contact form.submitted + .formSuccess{display:block}
+.contact form.submitted input,.contact form.submitted button{opacity:.55}
+.contact form.submitted button{pointer-events:none}
+
+/* More balanced premium spacing and readable copy. */
+.contactInner>p{max-width:760px;margin:0 auto 38px;line-height:1.65}
+.contact h2{margin-bottom:26px}
+.contact .privacy{font-size:11px}
+
+/* Prevent accidental oversized blank areas on desktop. */
+.clinic{min-height:0}
+.clinicCopy p{max-width:650px;line-height:1.7}
+.servicesHeader>p{max-width:420px;line-height:1.65}
+.doctorIntro p{max-width:560px;line-height:1.7}
+
+/* Refined card proportions. */
+.doctorPhoto{border-radius:0;overflow:hidden}
+.doctorPhoto img{transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.doctorCard:hover .doctorPhoto img{transform:scale(1.025)}
+.doctorInfo{padding-top:18px}
+.doctorGrid h3{letter-spacing:-.02em}
+
+.serviceCard{border-color:#dce5ec}
+.serviceCard h3{letter-spacing:-.035em}
+.serviceCard p{max-width:460px;line-height:1.65}
+
+.reviewGrid article{border:1px solid rgba(255,255,255,.12)}
+
+@media(max-width:850px){
+  .benefit{padding-left:0!important}
+  .benefit strong{font-size:15px}
+  .benefit small{font-size:12px}
+  .contactInner>p{font-size:15px}
+}
+@media(max-width:520px){
+  .sectionRule small{font-size:9px}
+  .contact h2{margin-bottom:20px}
+  .contactInner>p{font-size:14px;line-height:1.6}
+}
+
+/* Production readiness */
+.formHint{display:block;margin-top:10px;color:#8a9aaa;font-size:10px;line-height:1.5}
+.formHint code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10px}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}
+}
+
+.notFound{min-height:100svh;display:grid;place-items:center;padding:48px;background:#f4f7f9;color:#082d5d}.notFound>div{max-width:720px}.notFound h1{font-size:clamp(48px,7vw,96px);line-height:.95;letter-spacing:-.055em;margin:20px 0}.notFound p{font-size:20px;line-height:1.6;max-width:560px;margin:0 0 32px;color:#41607f}
+
+
+/* Contact form states */
+.honeypot {
+  position: absolute !important;
+  left: -10000px !important;
+  width: 1px !important;
+  height: 1px !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+form button:disabled {
+  opacity: .65;
+  cursor: wait;
+}
+.formError {
+  margin-top: 12px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #a34a4a;
+}
+
+/* Mobile clinic layout fix */
+@media (max-width: 850px){
+  .clinic{
+    grid-template-columns:minmax(0,1fr);
+    column-gap:0;
+  }
+  .clinic > .sectionRule{
+    grid-column:1 / -1;
+  }
+  .clinicCopy,
+  .clinicVisual{
+    width:100%;
+    min-width:0;
+  }
+  .clinic h2{
+    max-width:100%;
+    overflow-wrap:normal;
+    word-break:normal;
+  }
+  .clinicCopy p{
+    max-width:100%;
+  }
+  .stats{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:16px;
+    width:100%;
+  }
+  .stats b{min-width:0;}
+  .stats small{white-space:normal;line-height:1.3;}
+}
+
+@media (max-width: 520px){
+  .clinic{
+    padding-left:18px;
+    padding-right:18px;
+  }
+  .clinic h2{
+    font-size:clamp(38px,11vw,43px);
+    line-height:.96;
+  }
+  .stats{
+    gap:10px;
+    margin-top:38px;
+    padding-top:25px;
+  }
+  .stats b{
+    font-size:22px;
+  }
+  .stats small{
+    font-size:9px;
+  }
+}
